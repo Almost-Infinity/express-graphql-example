@@ -79,7 +79,7 @@ const author = new GraphQLObjectType({
     },
     createdAt: {
       type: GraphQLNonNull(GraphQLString),
-      description: '',
+      description: 'Date and time when the author was created.',
       resolve: (obj) => {
         return formatDate(new Date(obj.createdAt));
       },

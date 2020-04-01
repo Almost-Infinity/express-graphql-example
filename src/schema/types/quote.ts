@@ -43,7 +43,7 @@ const quote = new GraphQLObjectType({
     },
     createdAt: {
       type: GraphQLNonNull(GraphQLString),
-      description: '',
+      description: 'Date and time when the quote was created.',
       resolve: (obj) => {
         return formatDate(new Date(obj.createdAt));
       },
